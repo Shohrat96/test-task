@@ -1,0 +1,9 @@
+@import '../../styles/config/colors';
+
+.container{
+    background-color: $mainBackColor;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;   
+}

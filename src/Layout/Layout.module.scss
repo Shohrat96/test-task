@@ -1,0 +1,89 @@
+@import "../styles/config/colors";
+:export {
+    mainBorderColor:$mainBorderColor;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    max-width: 1196px;
+    margin: 0 auto;
+    background-color: $secondaryBackColor;
+    & .leftNavigation{
+        width: 86px;
+        display: flex;
+        justify-content: center;
+        & .leftNavWrap{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            & .navigationTab{
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+        }
+
+    }
+    & .mainContent{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        & .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 86px;
+            padding: 0 25px;
+
+            & .addRequestWrapper{
+                padding: 16px 16px 16px 30px;
+                margin-left: -16px;
+                border: 1px solid #f1f1f1;
+                display: flex;
+                align-items: center;
+                font-size: 12px;
+                cursor: pointer;
+                & a{
+                    color: $mainTextColor;
+                    margin-right: 16px;
+                }
+                & .addRequestPlusIcon{
+                    font-size: 27px;
+                    display: flex;
+                    align-items: center;
+                    color: $mainTextColor;
+                }
+            }
+            & .requestsBar{
+                margin-left: auto;
+                margin-right: 100px;
+                width: 200px;
+
+                & .requestBarData{
+                    color: $subTextColor;
+                    font-size: 12px;
+                }
+            }
+            & .account{
+                align-items: center;
+                display: flex;
+                & .accountData{
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 20px;
+                    & .accountName{
+                        color: $mainTextColor;
+                    }
+                    & .accountEmail{
+                        color: $secondaryTextColor;
+                    }
+                }
+                
+            }
+        }
+    }
+}

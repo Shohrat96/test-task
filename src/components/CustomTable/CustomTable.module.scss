@@ -1,0 +1,19 @@
+@import '../../styles/config/colors';
+
+.container{
+    & .customTable{
+        & tr th{
+            background-color: $secondaryBackColor;
+        }
+        & tr td{
+            background-color: $secondaryBackColor;
+            border: none;
+        }
+    }
+}
+
+.customRowClass{
+    border: none;
+    font-size: 12px;
+    background-color: $secondaryBackColor;
+}
