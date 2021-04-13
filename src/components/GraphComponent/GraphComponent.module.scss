@@ -1,46 +1,42 @@
-@import '../../styles/config/colors';
+@import "../../styles/config/colors";
 
-.container{
-    padding: 20px;
-    background-color: $secondaryBackColor;
-    border: 1px solid $secondaryBorderColor;
-    border-radius: 4px;
-    & .domainName{
-
-    }
-    & .content{
-        display: flex;
-        align-items: center;
-        & .domainData{
-
-            & .indexValue{
-                font-size: 20px;
-                color: $brandTextColor;
-            }
-            & .trackerIdx{
-                color: $subTextColor;
-                font-size: 9px;
-            }
-            & .changeValueWrap{
-                & .changeValueIcon{
-
-                }
-                & .changeValue{
-                    font-size: 9px;
-                }
-                & .positiveChange{
-                    color: $confirmColor;
-                }
-                & .negativeChange{
-                    color: $rejectColor;
-                }
-            }
+.container {
+  padding: 20px;
+  background-color: $secondaryBackColor;
+  border: 1px solid $secondaryBorderColor;
+  border-radius: 4px;
+  & .domainName {
+  }
+  & .content {
+    display: flex;
+    align-items: center;
+    & .domainData {
+      & .indexValue {
+        font-size: 20px;
+        color: $brandTextColor;
+      }
+      & .trackerIdx {
+        color: $subTextColor;
+        font-size: 9px;
+      }
+      & .changeValueWrap {
+        & .changeValueIcon {
         }
-        & .graphWrapper{
-            margin-left: 25px;
-            & .graphImg{
-
-            }
+        & .changeValue {
+          font-size: 9px;
         }
+        & .positiveChange {
+          color: $confirmColor;
+        }
+        & .negativeChange {
+          color: $rejectColor;
+        }
+      }
     }
+    & .graphWrapper {
+      margin-left: 25px;
+      & .graphImg {
+      }
+    }
+  }
 }

@@ -1,29 +1,28 @@
-@import '../../styles/config/colors';
+@import "../../styles/config/colors";
 
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 
-.container{
+  & .projectsTitle {
+    margin-bottom: 20px;
+    color: $subTextColor;
+  }
+  & .createProject {
     display: flex;
-    flex-direction: column;
-    padding: 20px;
-    
-    & .projectsTitle{
-        margin-bottom: 20px;
-        color: $subTextColor;
-    }
-    & .createProject{
-        display: flex;
-        margin-bottom: 15px;
-        border: 1px solid $mainBorderColor;
-        border-radius: 4px;
-        height: 50px;
-        align-items: center;
-        padding: 0 16px;
-        cursor: pointer;
+    margin-bottom: 15px;
+    border: 1px solid $mainBorderColor;
+    border-radius: 4px;
+    height: 50px;
+    align-items: center;
+    padding: 0 16px;
+    cursor: pointer;
 
-        & .creteProjText{
-            margin-left: 20px;
-            color: $mainTextColor;
-            font-size: 12px;
-        }
+    & .creteProjText {
+      margin-left: 20px;
+      color: $mainTextColor;
+      font-size: 12px;
     }
+  }
 }

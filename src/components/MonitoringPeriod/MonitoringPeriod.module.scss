@@ -1,49 +1,48 @@
-@import '../../styles/config/colors';
+@import "../../styles/config/colors";
 
-.container{
-    padding: 20px;
-    background-color: $secondaryBackColor;
-    border: 1px solid $secondaryBorderColor;
-    border-radius: 4px;
-    margin-bottom: 16px;
+.container {
+  padding: 20px;
+  background-color: $secondaryBackColor;
+  border: 1px solid $secondaryBorderColor;
+  border-radius: 4px;
+  margin-bottom: 16px;
 
-    & .periodTitle{
-        margin-bottom: 20px;
+  & .periodTitle {
+    margin-bottom: 20px;
+  }
+  & .periodContent {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    & .periodOptions {
+      display: flex;
+      border: 1px solid $secondaryBorderColor;
+      border-radius: 4px;
+      margin-right: 20px;
+
+      & .periodOption {
+        padding: 15px 22px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      & .selectedOption {
+        border: 1px solid $mainBrandColor;
+        color: $mainBrandColor;
+      }
     }
-    & .periodContent{
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
+    & .periodData {
+      border: 1px solid $secondaryBorderColor;
+      border-radius: 4px;
+      padding: 16px 22px;
 
-        & .periodOptions{
-            display: flex;
-            border: 1px solid $secondaryBorderColor;
-            border-radius: 4px;
-            margin-right: 20px;
-
-            & .periodOption{
-                padding: 15px 22px;
-                border: 1px solid transparent;
-                cursor: pointer;
-                border-radius: 4px;
-            }
-            & .selectedOption{
-                border: 1px solid $mainBrandColor;
-                color: $mainBrandColor;
-            }
-        }
-        & .periodData{
-            border: 1px solid $secondaryBorderColor;
-            border-radius: 4px;
-            padding: 16px 22px;
-
-            & .optionsImg{
-                margin-right: 13px;
-            }
-            & .periodShown{
-                color: $mainBrandColor;
-            }
-
-        }
+      & .optionsImg {
+        margin-right: 13px;
+      }
+      & .periodShown {
+        color: $mainBrandColor;
+      }
     }
+  }
 }

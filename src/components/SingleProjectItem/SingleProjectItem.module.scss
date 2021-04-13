@@ -1,65 +1,64 @@
 @import "../../styles/config/colors";
 
-.container{ 
+.container {
+  display: flex;
+  margin-bottom: 15px;
+  border: 1px solid $mainBorderColor;
+  border-radius: 4px;
+  height: 50px;
+  align-items: center;
+  padding: 0 16px;
+  cursor: pointer;
+
+  & .projectCount {
+    margin-right: 20px;
+    color: $brandTextColor;
+    font-weight: bold;
     display: flex;
-    margin-bottom: 15px;
-    border: 1px solid $mainBorderColor;
-    border-radius: 4px;
-    height: 50px;
+    justify-content: center;
+    width: 13px;
+  }
+  & .selectedProjectCount {
+  }
+  & .title {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    & .location {
+      font-size: 9px;
+      color: $subTextColor;
+      line-height: 11px;
+      letter-spacing: 0.02em;
+      margin-top: 2px;
+    }
+  }
+  & .dotsWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 5px;
+    height: 100%;
     align-items: center;
-    padding: 0 16px;
-    cursor: pointer;
+    justify-content: center;
+    margin-left: auto;
 
-    & .projectCount{
-        margin-right: 20px;
-        color: $brandTextColor;
-        font-weight: bold;
-        display: flex;
-        justify-content: center;
-        width: 13px;
+    & .singleDot {
+      width: 4px;
+      height: 4px;
+      border-radius: 2px;
+      margin-bottom: 3px;
+      background-color: #d4dae0;
     }
-    & .selectedProjectCount{
-        
-    }
-    & .title{
-        display: flex;
-        flex-direction: column;
-        margin-right: 30px;
-        & .location{
-            font-size: 9px;
-            color: $subTextColor;
-            line-height: 11px;
-            letter-spacing: 0.02em;
-            margin-top: 2px;
-        }
-    }
-    & .dotsWrapper{
-        display: flex;
-        flex-direction: column;
-        width: 5px;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-        margin-left: auto;
-
-        & .singleDot{
-            width: 4px;
-            height: 4px;
-            border-radius: 2px;
-            margin-bottom: 3px;
-            background-color: #d4dae0;
-        }
-    }
+  }
 }
 
-.selectedProjectContainer{
-    background-color: $mainBrandColor;
-    color: white;
-    & .projectCount{
-        color: $secondaryBackColor;
-    }
+.selectedProjectContainer {
+  background-color: $mainBrandColor;
+  color: white;
+  & .projectCount {
+    color: $secondaryBackColor;
+  }
 }
 
-.selectedRequest{
-    border: 1px solid $mainBrandColor;
+.selectedRequest {
+  border: 1px solid $mainBrandColor;
 }

@@ -1,45 +1,43 @@
- @import '../../styles/config/colors';
- 
- .container{
-    background-color: $mainBackColor;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    flex: 1;            
+@import "../../styles/config/colors";
 
-    & .contentTitle{
-        margin-bottom: 25px;
-        color: $mainTextColor;
+.container {
+  background-color: $mainBackColor;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  & .contentTitle {
+    margin-bottom: 25px;
+    color: $mainTextColor;
+  }
+  & .content {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+
+    & .projectsList {
+      flex: 1;
+      background-color: $secondaryBackColor;
+      height: 100%;
+      margin-right: 15px;
     }
-    & .content{
+    & .projectInfo {
+      flex: 3;
+
+      & .keyRequests {
+        padding: 20px;
+        margin-bottom: 16px;
+        background-color: $secondaryBackColor;
+        border: 1px solid $secondaryBorderColor;
+        border-radius: 4px;
+      }
+
+      & .graphsWrap {
         display: flex;
         justify-content: space-between;
-        flex: 1;
-
-        & .projectsList{
-            flex: 1;
-            background-color: $secondaryBackColor;
-            height: 100%;
-            margin-right: 15px;
-
-        }
-        & .projectInfo{
-            flex: 3;
-
-            & .keyRequests{
-                padding: 20px;
-                margin-bottom: 16px;
-                background-color: $secondaryBackColor;
-                border: 1px solid $secondaryBorderColor;
-                border-radius: 4px;
-            }
-
-
-            & .graphsWrap{
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 16px;
-            }
-        }
+        margin-bottom: 16px;
+      }
     }
+  }
 }
